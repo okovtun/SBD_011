@@ -2,6 +2,8 @@ https://github.com/okovtun/SBD_011
 https://www.youtube.com/watch?v=-RHChK8SrmA&list=PLeqyOOqxeiIOl01ZQIk419F03KIHUISGd&index=1&t=1245s
 
 
+Что будет выведено на экран в каждом из этих случаев:
+
 ----------------------------- 1 --------------------------------
 int i = 3;
 i = ++i + ++i;
