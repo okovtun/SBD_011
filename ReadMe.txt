@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=-RHChK8SrmA&list=PLeqyOOqxeiIOl01ZQIk419F03KIHUI
 TODO:
 1. Вывести на экран таблицу умножения;
 2. Вывести на экран таблицу Пифагора;
-
+3. Вывести на экран все фигуры из файла: https://github.com/okovtun/SBD_011/blob/master/ControlStructures/Task/Geometria1.txt
 
 DONE:
 1. Используя цикл for, написать программу, которая вычисляет факториал числа, введенного с клавиатуры;
