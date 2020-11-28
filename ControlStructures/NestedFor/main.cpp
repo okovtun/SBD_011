@@ -5,11 +5,36 @@ void main()
 {
 	setlocale(LC_ALL, "Russian");
 	int n = 10;
-	for (int i = 0; i < n; i++)
+	/*for (int i = 1; i <= n; i++)
 	{
-		for (int j = 0; j < n; j++)
+		cout << "Таблица умножения на " << i << ":\n";
+		for (int j = 1; j <= n; j++)
 		{
-			cout << i << "\t" << j << endl;
+			if (i < 10)
+			{
+				cout << " ";
+			}
+			cout << i << " * ";
+			if (j < 10)
+				cout << " ";
+			cout << j << " = ";
+			if (i*j < 100)cout << " ";
+			if (i*j < 10)cout << " ";
+			cout << i * j << endl;
 		}
+		cout << endl;
+	}*/
+
+	for (int i = 1; i <= n; i++)
+	{
+		//cout << i << endl;
+		for (int j = 1; j <= n; j++)
+		{
+			/*if (i*j < 100)cout << " ";
+			if (i*j < 10)cout << " ";*/
+			cout.width(5);
+			cout << i * j << "\t";
+		}
+		cout << endl;
 	}
 }
