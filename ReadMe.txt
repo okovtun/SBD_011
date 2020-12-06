@@ -2,6 +2,9 @@ https://github.com/okovtun/SBD_011
 https://www.youtube.com/watch?v=-RHChK8SrmA&list=PLeqyOOqxeiIOl01ZQIk419F03KIHUISGd&index=1&t=1245s
 
 TODO:
+Одномерный массив из десяти элементов заполнить случайными числами, после чего найти в нем повторяющиеся значения, вывести их на экран, а также вывести на экран количество повторений каждого найденного значения.
+
+DONE:
 1. Вывести на экран таблицу умножения;
 2. Вывести на экран таблицу Пифагора;
 3. Вывести на экран все фигуры из файла: https://github.com/okovtun/SBD_011/blob/master/ControlStructures/Task/Geometria1.txt
