@@ -1,24 +1,24 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 //VCS - Version Conreol System
-//СКВ - Система контроля версий
+//РЎРљР’ - РЎРёСЃС‚РµРјР° РєРѕРЅС‚СЂРѕР»СЏ РІРµСЂСЃРёР№
 //Commit
 //Branches
 //Scram, Agile....
 //GitHub
 //VCS: SVN, Subversion, Jira, .... !!!Git!!!
 //GitHub
-//Repository - это хранилище исходных кодов.
+//Repository - СЌС‚Рѕ С…СЂР°РЅРёР»РёС‰Рµ РёСЃС…РѕРґРЅС‹С… РєРѕРґРѕРІ.
 
 #ifdef OVERLOAD_EXAMPLES
 void function()
 {
-	cout << "Без параметров" << endl;
+	cout << "Р‘РµР· РїР°СЂР°РјРµС‚СЂРѕРІ" << endl;
 }
 int function(int a)
 {
-	cout << "Один параметр типа int" << endl;
+	cout << "РћРґРёРЅ РїР°СЂР°РјРµС‚СЂ С‚РёРїР° int" << endl;
 	return 0;
 }
 #endif // OVERLOAD_EXAMPLES
