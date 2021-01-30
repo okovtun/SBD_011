@@ -2,6 +2,11 @@ https://github.com/okovtun/SBD_011
 https://www.youtube.com/watch?v=-RHChK8SrmA&list=PLeqyOOqxeiIOl01ZQIk419F03KIHUISGd&index=1&t=1245s
 
 TODO:
+http://cplusplus.com/doc/tutorial/functions2/
+1. Создать ветку templated;
+2. В этой ветке шаблонизировать функции;
+
+DONE:
 Перегрузить фунции Sort, Sum, Avg, minValueIn, maxValueIn для одномерного и двумерного массива типа int, char и double.
 По возможности залить код на GitHub, и прислать ссылку на репозиторий, если не получится, то присылайте как обычно *.cpp-файл.
 
