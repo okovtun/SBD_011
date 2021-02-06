@@ -2,6 +2,9 @@ https://github.com/okovtun/SBD_011
 https://www.youtube.com/watch?v=-RHChK8SrmA&list=PLeqyOOqxeiIOl01ZQIk419F03KIHUISGd&index=1&t=1245s
 
 TODO:
+Написать шаблонную функцию Sort для сортировки двумерных массивов.
+
+DONE:
 http://cplusplus.com/doc/tutorial/functions2/
 1. Создать ветку templated;
 2. В этой ветке шаблонизировать функции;
