@@ -2,6 +2,10 @@ https://github.com/okovtun/SBD_011
 https://www.youtube.com/watch?v=-RHChK8SrmA&list=PLeqyOOqxeiIOl01ZQIk419F03KIHUISGd&index=1&t=1245s
 
 TODO:
+0. Выучить теорию!!!!!!!!!!!!!!!!!!!!
+1. Отгадать загадку: Какой максимальный объм памяти можно проадресовать 8-байтовым адресом?)
+
+DONE:
 Написать шаблонную функцию Sort для сортировки двумерных массивов.
 
 DONE:

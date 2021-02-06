@@ -1,0 +1,4 @@
+int a = 2;
+int* pa = &a;
+'pa' - указатель, ...
+& - Оператор взятия адреса (Address-of operator).
