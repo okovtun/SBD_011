@@ -1,4 +1,6 @@
 ﻿#include"Functions.h"
+#include"Print.h"
+//#include"Print.cpp"
 
 void main()
 {

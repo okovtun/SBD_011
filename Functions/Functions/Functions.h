@@ -32,7 +32,3 @@ void FillRand(double arr[], const int n);
 void FillRand(char arr[], const int n);
 void FillRand(int arr[ROWS][COLS], const int m, const int n);
 
-void Print(int arr[], const int n);
-void Print(double arr[], const int n);
-void Print(char arr[], const int n);
-void Print(int arr[ROWS][COLS], const int m, const int n);
