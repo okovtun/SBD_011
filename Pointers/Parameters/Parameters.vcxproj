@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{39563AB3-6B20-470A-A232-9987F694DE55}</ProjectGuid>
+    <ProjectGuid>{CEF45758-1034-4937-A205-233F08D4A97B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>HomeWork</RootNamespace>
+    <RootNamespace>Parameters</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
