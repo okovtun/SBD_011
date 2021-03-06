@@ -2,6 +2,9 @@
 #include<ctime>
 using namespace std;
 
+int** Allocate(const int m, const int n);
+void  Clear(int** arr, const int m);
+
 void FillRand(int arr[], const int n);
 void FillRand(int** arr, const int m, const int n);
 void Print(int arr[], const int n);
@@ -11,12 +14,16 @@ int* push_back(int arr[], int& n, int value);
 int* push_front(int arr[], int& n, int value);
 int* insert(int arr[], int& n, int value, int index);	//Вставляет значение в массив по указанному индексу
 
+int** push_row_back(int** arr, int& m, const int n);
+
 int* pop_back(int arr[], int& n);
 int* pop_front(int arr[], int& n);
 int* erase(int arr[], int& n, int index);	//Удаляет значение из массива по указанному индексу
 
 //#define DYNAMIC_MEMORY_1
 #define DYNAMIC_MEMORY_2
+//#define FULL_TEST
+#define PREFORMANCE_TEST
 
 void main()
 {
@@ -50,6 +57,23 @@ void main()
 
 	cout << "Введите количество строк: "; cin >> m;
 	cout << "Введите количество элементов строки: "; cin >> n;
+	int** arr = Allocate(m, n);
+	cout << "Память выделена, добавляем троку в конец...\n";
+	arr = push_row_back(arr, m, n);
+	cout << "Строка добавлена!" << endl;
+#ifdef FULL_TEST
+	FillRand(arr, m, n);
+	Print(arr, m, n);
+	cout << "Добавление строки в конец:\n";
+	arr = push_row_back(arr, m, n);
+	Print(arr, m, n);
+#endif // FULL_TEST
+
+	Clear(arr, m);
+}
+
+int** Allocate(const int m, const int n)
+{
 	//1) Создаем массив указателей:
 	int** arr = new int*[m];
 	//2) Выделяем память под строки двумерного массива:
@@ -57,9 +81,10 @@ void main()
 	{
 		arr[i] = new int[n] {};
 	}
-	FillRand(arr, m, n);
-	Print(arr, m, n);
-
+	return arr;
+}
+void  Clear(int** arr, const int m)
+{
 	//			Удавление двумерного динамичского массива:
 	//1) Удаляем строки:
 	for (int i = 0; i < m; i++)
@@ -137,6 +162,17 @@ int* push_front(int arr[], int& n, int value)
 	arr[0] = value;
 	n++;
 	return arr;
+}
+
+int** push_row_back(int** arr, int& m, const int n)
+{
+	int** buffer = new int*[m + 1];
+	for (int i = 0; i < m; i++)
+		buffer[i] = arr[i];
+	delete[] arr;
+	buffer[m] = new int[n] {};
+	m++;
+	return buffer;
 }
 
 int* pop_back(int arr[], int& n)
