@@ -23,7 +23,8 @@ int* erase(int arr[], int& n, int index);	//Удаляет значение из массива по указа
 //#define DYNAMIC_MEMORY_1
 #define DYNAMIC_MEMORY_2
 //#define FULL_TEST
-#define PREFORMANCE_TEST
+//#define PREFORMANCE_TEST
+#define PREFORMANCE_TEST_2
 
 void main()
 {
@@ -52,6 +53,7 @@ void main()
 	using std::cout;
 	using std::endl;
 
+#ifdef PREFORMANCE_TEST
 	int m;	//Количество строк
 	int n;	//Количество элементов строки
 
@@ -61,6 +63,9 @@ void main()
 	cout << "Память выделена, добавляем троку в конец...\n";
 	arr = push_row_back(arr, m, n);
 	cout << "Строка добавлена!" << endl;
+	Clear(arr, m);
+#endif // PREFORMANCE_TEST
+
 #ifdef FULL_TEST
 	FillRand(arr, m, n);
 	Print(arr, m, n);
@@ -69,7 +74,14 @@ void main()
 	Print(arr, m, n);
 #endif // FULL_TEST
 
-	Clear(arr, m);
+	int n;
+	cout << "Введите размер массива: "; cin >> n;
+	int* arr = new int[n] {};
+	for (int i = 0; i < 150000; i++)
+	{
+		arr = push_back(arr, n, rand());
+	}
+	Print(arr, n);
 }
 
 int** Allocate(const int m, const int n)
